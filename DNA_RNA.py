@@ -29,11 +29,11 @@ def check(seq):         # проверка
 
 def transcribe():
     print('DNA:  ', seq)
-    print('Transcribe: ', end ="")
+    print('Transcribe: ', end="")
     transcript = {'A': 'U', 'C': 'G', 'G': 'C', 'T': 'A', 'a': 'u', 'c': 'g', 'g': 'c', 't': 'a'}
     i = 0
     for i in range(len_seq):
-        print(transcript[seq[i]], end ="")
+        print(transcript[seq[i]], end="")
     print()
 
 
