@@ -49,7 +49,7 @@ def complement():
     complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A', 'a': 't', 'c': 'g', 'g': 'c', 't': 'a'}
     i = 0
     for i in range(len_seq):
-        print(complement[seq[i]], end ="")
+        print(complement[seq[i]], end="")
     print()
 
 
@@ -60,7 +60,7 @@ def reverse_complement():
     i = 0
     rev_seq = seq[::-1]
     for i in range(len_seq):
-        print(r_complement[rev_seq[i]], end ="")
+        print(r_complement[rev_seq[i]], end="")
     print()
 
 
@@ -86,12 +86,12 @@ def prog():     # меню
 
 
 def main():     # главная
-        global seq
-        print('For exit enter: 0')
-        seq = input("Enter the sequence ->")        # ввод последовательности
-        if seq == '0':
-            exit()
-        check(seq)     # проверка на символы и смесь
+    global seq
+    print('For exit enter: 0')
+    seq = input("Enter the sequence ->")        # ввод последовательности
+    if seq == '0':
+        exit()
+    check(seq)     # проверка на символы и смесь
 # BEGIN
 
 
