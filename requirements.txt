@@ -1,0 +1,8 @@
+google
+kivy
+bs4
+Bio
+pandas
+scipy
+opencv-python
+lxml
