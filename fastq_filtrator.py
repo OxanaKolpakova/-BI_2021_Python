@@ -1,4 +1,4 @@
-def main():  # главная
+def main():  # главная программа
     input_fastq = input("Input the fastq file name ->")
     output_file_prefix = input("Input the output file prefix ->")
     yfilename = output_file_prefix + '_passed.fastq'
