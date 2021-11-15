@@ -146,4 +146,3 @@ def save(input_fastq, yfilename, zfilename, leng_min, leng_max, gc_bounds_min, g
 
 
 main()
-
