@@ -82,7 +82,7 @@ def start(input_fastq, yfilename, zfilename, leng_min, leng_max, gc_bounds_min, 
             y.write(all_fastq[i])
             y.write(all_fastq[i+1])
             y.write(all_fastq[i+2])
-        elif save_filtered == True:
+        elif save_filtered:
             z = open(zfilename, 'r+')
             z.seek(0, 2)
             z.write(all_fastq[i - 1])
