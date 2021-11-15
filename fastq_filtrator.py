@@ -48,7 +48,7 @@ def start(input_fastq, yfilename, zfilename, leng_min, leng_max, gc_bounds_min, 
     print('gc_bounds_max =', gc_bounds_max)
     print('quality_threshold =', quality_threshold)
     print('save_filtered =', save_filtered)
-    pause = input("Press enter to continue ->")
+    # pause = input("Press enter to continue ->")
     x = open(input_fastq, 'r')  # открыть файл чтения
     y = open(yfilename, 'w')    # создать файл для записи
     y.close()
@@ -71,7 +71,7 @@ def start(input_fastq, yfilename, zfilename, leng_min, leng_max, gc_bounds_min, 
         print(quality)
         sum_ord = 0
         len_quality = len(quality)
-        for j in range(len_quality): # подсчет качества
+        for j in range(len_quality):  # подсчет качества
             sum_ord = sum_ord + ord(quality[j])
             quality_sum = sum_ord / len_quality
         print('quality_sum=', quality_sum)
@@ -146,3 +146,4 @@ def save(input_fastq, yfilename, zfilename, leng_min, leng_max, gc_bounds_min, g
 
 
 main()
+
