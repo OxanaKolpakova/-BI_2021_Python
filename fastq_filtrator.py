@@ -110,7 +110,7 @@ def save(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, quality_th
     print('save_filtered =', save_filtered)
     prog_menu(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, quality_threshold, save_filtered)
 
-    
+
 input_fastq = input("Input the fastq file name ->")
 output_file_prefix = input("Input the output file prefix ->")
 gc_bounds = (0, 100)
