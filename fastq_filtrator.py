@@ -113,7 +113,7 @@ def save(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, quality_th
     
 input_fastq = input("Input the fastq file name ->")
 output_file_prefix = input("Input the output file prefix ->")
-gc_bound s= (0, 100)
+gc_bounds = (0, 100)
 length_bounds = (0, 2**32)
 quality_threshold = 0
 save_filtered = False
