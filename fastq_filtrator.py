@@ -37,7 +37,7 @@ def start_filters(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, q
     print('gc_bounds =', gc_bounds)
     print('quality_threshold =', quality_threshold)
     print('save_filtered =', save_filtered)
-    #pause = input("Press enter to continue ->")
+    # pause = input("Press enter to continue ->")
     x = open(input_fastq, 'r')  # открыть файл чтения
     y = open(yfilename, 'w')    # создать файл для записи
     y.close()
@@ -45,7 +45,7 @@ def start_filters(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, q
     z.close()
     all_fastq = x.readlines()
     num_str = sum(1 for line in all_fastq)
-    print('num_str=', num_str)   
+    print('num_str=', num_str)
     for i in range(1, num_str+1, 4):
         print('i=', i)
         print(all_fastq[i], end='')
@@ -64,8 +64,8 @@ def start_filters(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, q
             sum_ord = sum_ord + ord(quality[j])
             quality_sum = sum_ord / len_quality
         print('quality_sum=', quality_sum)
-        print(length_bounds[0], length_bounds[1], gc_bounds[0], gc_bounds[1] )
-        if length_bounds[0]<= len_str <= length_bounds[1] and GC_content >= gc_bounds[0] and GC_content <= gc_bounds[1] and quality_sum >= quality_threshold:
+        print(length_bounds[0], length_bounds[1], gc_bounds[0], gc_bounds[1])
+        if length_bounds[0] <= len_str <= length_bounds[1] and gc_bounds[0] <= GC_content <= gc_bounds[1] and quality_sum >= quality_threshold:
             y = open(yfilename, 'r+')
             y.seek(0, 2)
             y.write(all_fastq[i-1])
@@ -110,10 +110,11 @@ def save(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, quality_th
     print('save_filtered =', save_filtered)
     prog_menu(input_fastq, yfilename, zfilename, length_bounds, gc_bounds, quality_threshold, save_filtered)
 
+    
 input_fastq = input("Input the fastq file name ->")
 output_file_prefix = input("Input the output file prefix ->")
-gc_bounds=(0, 100)
-length_bounds=(0, 2**32)
-quality_threshold=0
-save_filtered=False
+gc_bound s= (0, 100)
+length_bounds = (0, 2**32)
+quality_threshold = 0
+save_filtered = False
 main(input_fastq, output_file_prefix, gc_bounds, length_bounds, quality_threshold, save_filtered)
