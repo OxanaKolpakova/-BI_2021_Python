@@ -9,4 +9,3 @@ with open('ftps.txt', "w") as output:
         str = str.replace("\t", "\n")
         str = str.replace(";", "\n")
         output.write(str)
-        
