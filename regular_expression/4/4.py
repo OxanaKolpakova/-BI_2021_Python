@@ -8,4 +8,3 @@ with open('output.txt', "w") as output:
     for str in find:
         output.write(str)
         output.write("\n")
-        
