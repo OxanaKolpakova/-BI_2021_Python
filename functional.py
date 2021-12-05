@@ -21,3 +21,4 @@ def conditional_reduce(seq, func_1, func_2):
     if func_1(i):
       sum = func_2(sum, i)
   return(sum)
+
