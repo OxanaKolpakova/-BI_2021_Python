@@ -5,14 +5,14 @@ def sequential_map(seq, *args):
 
 
 def consensus_filter(seq, *args):
-      list = []
-      for i in seq:
-        check = 1
-        for func in args:
-            check = check*func(i)
-        if check == 1:
-            list.append(i)
-      return(list)
+    list = []
+    for i in seq:
+    check = 1
+    for func in args:
+        check = check*func(i)
+    if check == 1:
+        list.append(i)
+    return(list)
 
 
 def conditional_reduce(seq, func_1, func_2):
