@@ -1,7 +1,7 @@
 def sequential_map(seq, *args):
-  for func in args:
-    seq = list(map(func, seq))
-  return(seq)
+    for func in args:
+        seq = list(map(func, seq))
+    return(seq)
 
 
 def consensus_filter(seq, *args):
