@@ -7,7 +7,7 @@ def sequential_map(seq, *args):
 def consensus_filter(seq, *args):
     list = []
     for i in seq:
-    check = 1
+        check = 1
     for func in args:
         check = check*func(i)
     if check == 1:
@@ -16,8 +16,8 @@ def consensus_filter(seq, *args):
 
 
 def conditional_reduce(seq, func_1, func_2):
-      sum = 0
-      for i in seq:
+    sum = 0
+    for i in seq:
         if func_1(i):
             sum = func_2(sum, i)
-      return(sum)
+    return(sum)
