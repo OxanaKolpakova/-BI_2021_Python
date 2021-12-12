@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import sys
-import argparse
 if len(sys.argv) == 1:
     print("Usage: {} FILENAMEs".format(sys.argv[0]))
 else:
@@ -23,7 +22,8 @@ else:
                 chars += len(line)
         if sys.argv[1] == "l":
             print(lines, filename)
-        elif sys.argv[1] == "w":			print(words, filename)
+        elif sys.argv[1] == "w":			
+            print(words, filename)
         elif sys.argv[1] == "c":
             print(chars, filename)
         else:
