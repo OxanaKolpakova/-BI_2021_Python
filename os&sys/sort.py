@@ -1,8 +1,6 @@
 #!/usr/bin/python3
- 
-import sys
-import argparse
 
+import sys
 filenames = sys.argv[1:]
 all_list = []
 for filename in filenames:
