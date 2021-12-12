@@ -28,14 +28,14 @@ else:
             print(chars, filename)
         else:
             print(lines, words, chars, filename)
-	all_lines += lines
-	all_words += words
-	all_chars += chars
+        all_lines += lines
+        all_words += words
+        all_chars += chars
     if sys.argv[1] == "l":
-	print(all_lines, "total")
+        print(all_lines, "total")
     elif sys.argv[1] == "w":
-	print(all_words, "total")
+        print(all_words, "total")
     elif sys.argv[1] == "c":
-	print(all_chars, "total")
+        print(all_chars, "total")
     else:
-	print(all_lines, all_words, all_chars, "total")
+        print(all_lines, all_words, all_chars, "total")
