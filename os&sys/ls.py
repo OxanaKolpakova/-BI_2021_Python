@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import sys
-import argparse
 import os
 if len(sys.argv)==1:
     print(*os.listdir("."), sep="\n")
