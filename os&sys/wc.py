@@ -21,13 +21,13 @@ else:
                 lines += 1
                 words += len(line.split())
                 chars += len(line)
-	if sys.argv[1] == "l":
-	    print(lines, filename)
-	elif sys.argv[1] == "w":			print(words, filename)
-	elif sys.argv[1] == "c":
-	    print(chars, filename)
-	else:
-	    print(lines, words, chars, filename)
+        if sys.argv[1] == "l":
+            print(lines, filename)
+        elif sys.argv[1] == "w":			print(words, filename)
+        elif sys.argv[1] == "c":
+            print(chars, filename)
+        else:
+            print(lines, words, chars, filename)
 	all_lines += lines
 	all_words += words
 	all_chars += chars
