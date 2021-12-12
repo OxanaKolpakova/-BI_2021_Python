@@ -18,9 +18,9 @@ else:
         chars = 0
         with open(filename) as file:
             for line in file:
-	        lines += 1
-	        words += len(line.split())
-	        chars += len(line)
+                lines += 1
+                words += len(line.split())
+                chars += len(line)
 	if sys.argv[1] == "l":
 	    print(lines, filename)
 	elif sys.argv[1] == "w":			print(words, filename)
@@ -39,7 +39,3 @@ else:
 	print(all_chars, "total")
     else:
 	print(all_lines, all_words, all_chars, "total")
-
-
-
-
