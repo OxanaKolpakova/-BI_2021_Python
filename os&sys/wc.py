@@ -2,7 +2,7 @@
 
 import sys
 import argparse
-if len(sys.argv)==1:
+if len(sys.argv) == 1:
     print("Usage: {} FILENAMEs".format(sys.argv[0]))
 else:
     if sys.argv[1] == "l" or sys.argv[1] == "w" or sys.argv[1] == "c":
@@ -14,8 +14,8 @@ else:
     all_chars = 0
     for filename in filenames:
         lines = 0
-	words = 0
-	chars = 0
+        words = 0
+        chars = 0
 	with open(filename) as file:
 	    for line in file:
 	        lines += 1
