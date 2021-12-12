@@ -11,4 +11,4 @@ if sys.argv[1] == "r":
 else:
     for i in range(1, len(sys.argv)):
         print(sys.argv[i])
-        os.remove(sys.argv[i]) 
+        os.remove(sys.argv[i])
