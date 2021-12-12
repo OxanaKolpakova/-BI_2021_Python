@@ -8,7 +8,7 @@ def random_walk(num_steps=5000):
     x = []
     y = []
     coordinate = [0, 0]
-    step_list = [[0, 1],[0, -1],[1, 0],[-1, 0]]
+    step_list = [[0, 1], [0, -1], [1, 0], [-1, 0]]
     for num in range(num_steps):
         step = random.choice(step_list)
         coordinate = [sum(i) for i in zip_longest(coordinate, step, fillvalue=0)]
