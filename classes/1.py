@@ -4,7 +4,7 @@ class Fruit(object):
         self.color = color
         self.taste = taste
         self.mellowness = mellowness
-  
+
     def test(self):
         if 5 < self.mellowness <= 10:
             return("Ready to be eaten")
@@ -15,11 +15,11 @@ class Fruit(object):
 
     def after_a_while(self):
         self.mellowness += 1
-        
-    if __name__ == "__main__":
-        apple = Fruit("red", "sweet", 10)
-        print(apple.color)
-        print(apple.test())
-        print(apple.after_a_while())
-        print(apple.mellowness)
-        print(apple.test())
+
+if __name__ == "__main__":
+    apple = Fruit("red", "sweet", 10)
+    print(apple.color)
+    print(apple.test())
+    print(apple.after_a_while())
+    print(apple.mellowness)
+    print(apple.test())
