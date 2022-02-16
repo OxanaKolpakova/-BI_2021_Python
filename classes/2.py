@@ -71,7 +71,7 @@ class my_class(object):
         }
         protein = ""
         for i in range(0, len(self.seq), 3):
-            test_seq = self.seq[i : i + 3]
+            test_seq = self.seq[i:i + 3]
             protein += map[test_seq]
         return protein
 
