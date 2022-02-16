@@ -6,7 +6,6 @@ class my_class(object):
     def __init__(self, path):
         self.path = path
 
-
     def num_seq(self):
         with open(self.path) as f:
             count = 0
@@ -49,4 +48,3 @@ class my_class(object):
                 if not line:
                     break
         return(count_GC/count_all)
-
