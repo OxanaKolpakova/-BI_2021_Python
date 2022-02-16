@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 
 class my_class(object):
 
-
     def __init__(self, path):
         self.path = path
 
