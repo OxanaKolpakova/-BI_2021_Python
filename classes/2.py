@@ -22,13 +22,13 @@ class my_class(object):
             "GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G",
         }
         protein = ''
-        for i in range(0,len(self.seq),3):
+        for i in range(0, len(self.seq), 3):
             test_seq = self.seq[i:i+3]
             protein += map[test_seq]
-    return(protein)
-  
+        return(protein)
+ 
     def reverse_transcription(self):
-        map = {"A":"T", "G":"C", "C":"G", "U":"A",}
+        map = {"A": "T", "G": "C", "C": "G", "U": "A", }
         seq = ''
         reverse_seq = self.seq[::-1]
         for i in reverse_seq:
