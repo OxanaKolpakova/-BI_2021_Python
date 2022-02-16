@@ -19,7 +19,8 @@ class my_class(object):
             "GUU": "V", "GUC": "V", "GUA": "V", "GUG": "V",
             "GCU": "A", "GCC": "A", "GCA": "A", "GCG": "A",
             "GAU": "D", "GAC": "D", "GAA": "E", "GAG": "E",
-            "GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G",}
+            "GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G",
+        }
         protein = ''
         for i in range(0,len(self.seq),3):
             test_seq = self.seq[i:i+3]
