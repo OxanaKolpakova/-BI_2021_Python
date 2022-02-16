@@ -22,14 +22,14 @@ class my_class(object):
         seq_length = []
         with open(self.path) as f:
             count = 0
-            while(True): 
+            while(True):
                 line = f.readline()
                 if line.find(">") == -1:
-                    count += len(line)                   
+                    count += len(line)
                 else:
                     print(count)
                     seq_length.append(count)
-                    count = 0             
+                    count = 0
                 if not line:
                     break
         seq_length.append(count)
@@ -49,4 +49,4 @@ class my_class(object):
                 if not line:
                     break
         return(count_GC/count_all)
-    
+
