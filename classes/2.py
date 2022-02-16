@@ -26,7 +26,7 @@ class my_class(object):
             test_seq = self.seq[i:i+3]
             protein += map[test_seq]
         return(protein)
- 
+
     def reverse_transcription(self):
         map = {"A": "T", "G": "C", "C": "G", "U": "A", }
         seq = ''
