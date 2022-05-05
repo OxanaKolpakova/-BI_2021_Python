@@ -6,7 +6,6 @@ import argparse
 
 def fasta_reader(fasta_name):
     with open(fasta_name, "r") as file:
-        id = ""
         seq = []
         for line in file:
             if line.startswith(">"):
@@ -61,3 +60,4 @@ if __name__ == "__main__":
         print(", ".join("%s: %s" % (k, count_dict[k]) for k in count_dict.keys()))
     total_time = time.time() - start_time
     print("Total time:", total_time, "sec")
+    
