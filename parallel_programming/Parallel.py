@@ -1,5 +1,5 @@
 import time
-from multiprocessing import Process, Manager, Queue
+from multiprocessing import Process, Manager, # Queue
 import itertools
 import argparse
 
@@ -60,4 +60,4 @@ if __name__ == "__main__":
         print(", ".join("%s: %s" % (k, count_dict[k]) for k in count_dict.keys()))
     total_time = time.time() - start_time
     print("Total time:", total_time, "sec")
-    
+  
