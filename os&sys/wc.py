@@ -20,11 +20,11 @@ else:
                 lines += 1
                 words += len(line.split())
                 chars += len(line)
-        if sys.argv[1] == "l":
+        if sys.argv[1] == "-l":
             print(lines, filename)
-        elif sys.argv[1] == "w":
+        elif sys.argv[1] == "-w":
             print(words, filename)
-        elif sys.argv[1] == "c":
+        elif sys.argv[1] == "-c":
             print(chars, filename)
         else:
             print(lines, words, chars, filename)
