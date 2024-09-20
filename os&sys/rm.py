@@ -4,7 +4,7 @@ import sys
 import shutil
 import os
 
-if sys.argv[1] == "r":
+if sys.argv[1] == "-r":
     for i in range(2, len(sys.argv)):
         print(sys.argv[i])
         shutil.rmtree(sys.argv[i])
