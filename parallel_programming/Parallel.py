@@ -12,7 +12,7 @@ def fasta_reader(fasta_name):
                 contig = line.split()[0][1:]
             else:
                 seq = line.replace("\n", "")
-                unique = dict(zip(list(seq), [list(seq).count(i) for i in list(seq)]))
+                unique = Counter(seq)
                 yield contig, unique
 
 
